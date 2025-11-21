@@ -2,8 +2,9 @@ from pathlib import Path
 
 import anndata as ad
 
-DATA_DIR = Path("datasets/competition_support_set")
-CONTROL_H5AD = DATA_DIR / "control_cells_sample.h5ad"
+DATA_DIR = Path("datasets")
+CONTROL_H5AD = DATA_DIR / "prediction1.h5ad"
+
 
 from sample_control import load_gene_names
 
@@ -35,6 +36,7 @@ def update_control_targets(goi: str) -> None:
 
 if __name__ == "__main__":
     gene_list = load_gene_names()
-    goi = gene_list[0]
+    goi = gene_list[1]
+    print(gene_list[0:4])
     print(f"Using gene of interest: {goi}")
     update_control_targets(goi)
