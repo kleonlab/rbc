@@ -4,7 +4,7 @@ from pathlib import Path
 import anndata as ad
 import pandas as pd
 
-DATA_DIR = Path("datasets/competition_support_set")
+DATA_DIR = Path("data/competition_support_set")
 GENE_NAMES = DATA_DIR / "gene_names.csv"
 TRAINING_H5 = DATA_DIR / "competition_train.h5"
 OUTPUT_SAMPLE_H5AD = DATA_DIR / "control_cells_sample.h5ad"

@@ -2,8 +2,8 @@ from pathlib import Path
 
 import anndata as ad
 
-DATA_DIR = Path("datasets")
-CONTROL_H5AD = DATA_DIR / "prediction1.h5ad"
+DATA_DIR = Path("data")
+CONTROL_H5AD = DATA_DIR / "competition_support_set/control_cells_sample.h5ad"
 
 
 from sample_control import load_gene_names

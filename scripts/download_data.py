@@ -4,7 +4,7 @@ import requests
 from tqdm.auto import tqdm  # picks the best bar for the environment
 
 url = "https://storage.googleapis.com/vcc_data_prod/datasets/state/competition_support_set.zip"
-output_path = "competition_support_set.zip"
+output_path = "data/competition_support_set.zip"
 
 # stream the download so we can track progress
 response = requests.get(url, stream=True)
@@ -23,7 +23,7 @@ from zipfile import ZipFile
 from tqdm.auto import tqdm
 import os
 
-out_dir  = "competition_support_set"
+out_dir  = "data/competition_support_set"
 
 os.makedirs(out_dir, exist_ok=True)
 
